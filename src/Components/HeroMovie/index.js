@@ -15,8 +15,8 @@ export default function HeroMovie ({data}) {
                             <div className="genres">{genres.join(" - ")}</div>
                         </div>
                         <div className="btn-group flex gap-20">
-                            <Button icon="fa-solid fa-play" className="primary large">Play</Button>
-                            <Button className="dark large">More Info</Button>
+                            <Button type="primary" size="large" icon="fa-solid fa-play">watch now</Button>
+                            <Button type="dark" size="large">more info</Button>
                         </div>
                         <div className="description">
                             <p>{description}</p>

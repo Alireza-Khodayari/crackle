@@ -1,13 +1,13 @@
-import { Fragment } from "react"
-import { Style } from "./style"
+import { Fragment } from "react";
+import { Style } from "./style";
 
 export default function Button (props) {
-    const {children, className, icon} = props
-    
-    function renderFarm () {
+    const {icon, className, children, size="default", type="default"} = props
+
+    function renderFarm() {
         if (icon) {
             return (
-                <div className="with-icon">
+                <div className="flex align-center gap-5">
                     <span><i className={icon}></i></span>
                     <span>{children}</span>
                 </div>
@@ -20,8 +20,8 @@ export default function Button (props) {
     }
 
     return (
-        <Style href="#" className={className}>
-            {renderFarm()}
+        <Style size={size} type={type}>
+            <a  href="#" className={className}>{renderFarm()}</a>
         </Style>
     )
 }
