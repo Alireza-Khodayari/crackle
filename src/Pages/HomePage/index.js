@@ -1,5 +1,6 @@
 import HeroMovie from "../../Components/HeroMovie";
 import PrimaryLayout from "../../Components/Layouts/PrimaryLayout";
+import MovieList from "../../Components/MovieList";
 
 const heroData = {
     poster: "https://static.namava.ir/Content/Upload/Images/e2374a17-2a98-4447-8960-bef6f4f7d6aa.jpg?anchor=middlecenter&crop=auto&scale=both&w=1920&h=900",
@@ -14,6 +15,9 @@ export default function HomePage () {
     return (
         <PrimaryLayout>
             <HeroMovie data={heroData}></HeroMovie>
+            <MovieList title="Spotlight" url="movies"></MovieList>
+            <MovieList title="New on Crackle" url="movies?page=3"></MovieList>
+            <MovieList title="Popular TV" url="movies?page=4"></MovieList>
         </PrimaryLayout>
     )
 }

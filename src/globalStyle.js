@@ -5,6 +5,8 @@ body {
     margin: 0;
     direction: ltr;
     font-family: 'Sora';
+    background-color: #000;
+    color: #fff;
 }
 ul, ol {
     margin: 0;
@@ -14,9 +16,13 @@ ul, ol {
 *, *:before, *:after {
     box-sizing: border-box;
 }
-.container {
+.full-container {
     width: 100%;
     padding: 0 15px;
+}
+.container {
+    width:100%;
+    padding: 0 50px;
 }
 a {
     text-decoration: none;
