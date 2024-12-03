@@ -1,12 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+
 body {
     margin: 0;
     direction: ltr;
     font-family: 'Sora';
     background-color: #000;
     color: #fff;
+}
+button, input {
+    font-family: 'Sora';
 }
 ul, ol {
     margin: 0;
@@ -26,6 +30,9 @@ ul, ol {
 }
 a {
     text-decoration: none;
+}
+.content {
+    padding: 106px 0 50px 0;
 }
 .h-full {
     height:100%;

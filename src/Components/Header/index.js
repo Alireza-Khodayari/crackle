@@ -4,7 +4,7 @@ import {Style} from "./style";
 export default function Header () {
     return (
         <Style className="header">
-                <div className="container">
+                <div className="full-container">
                     <div className="header-inner flex space-between align-center">
                         <div className="left flex gap-40 align-center">
                             <div className="logo">

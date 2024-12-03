@@ -23,14 +23,15 @@ export default function Movies () {
             const {id, title, poster} = item;
             return(
                 <li key={id}>
-                    <h2>{title}</h2>
-                    <img src={poster} />
+                    <h2 style={{width: "200px"}}>{title}</h2>
+                    <img style={{width: "200px", height: "auto"}} src={poster} />
                 </li>
             )
         })
     }
     function getApi (page=1) {
-        api.get(`movies?page=${page}`)
+        // api.get(`movies?page=${page}`)
+        api.get(`movies`,{params : {page : page}})
         .then( function (response) {
             setData(response.data)
         })
