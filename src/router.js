@@ -4,6 +4,7 @@ import SingleMovie from "./Pages/SingleMovie";
 import Movies from "./Pages/Movies";
 import NotFound from "./Pages/NotFound";
 import Search from "./Pages/Search";
+import NewMovie from "./Pages/NewMovie";
 
 const routes = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const routes = createBrowserRouter([
     {
         path: "/search",
         element: <Search />
+    },
+    {
+        path: "/new",
+        element: <NewMovie />
     },
     {
         path: "*",
