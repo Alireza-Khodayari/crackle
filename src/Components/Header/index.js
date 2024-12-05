@@ -13,7 +13,7 @@ export default function Header () {
                             <div className="menu">
                                 <ul className="flex gap-10">
                                     <li>
-                                        <Button icon="fa-solid fa-film">Movies</Button>
+                                        <Button to="/movies" icon="fa-solid fa-film">Movies</Button>
                                     </li>
                                     <li>
                                         <Button icon="fa-solid fa-tv">TV shows</Button>

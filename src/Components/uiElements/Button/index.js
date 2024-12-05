@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import { Style } from "./style";
+import { Link } from "react-router-dom";
 
 export default function Button (props) {
-    const {icon, className, children, size="default", type="default"} = props
+    const {icon, className, children, size="default", type="default", to} = props
 
     function renderFarm() {
         if (icon) {
@@ -21,7 +22,7 @@ export default function Button (props) {
 
     return (
         <Style size={size} type={type}>
-            <a  href="#" className={className}>{renderFarm()}</a>
+            <Link to={to} className={className}>{renderFarm()}</Link>
         </Style>
     )
 }

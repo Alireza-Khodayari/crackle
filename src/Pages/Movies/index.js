@@ -2,8 +2,10 @@ import { Style } from "./style";
 import { useEffect, useState } from "react";
 import { api } from "../../utils/api";
 import PageInation from "../../Components/PageInation";
+import useTtile from "../../hook/useTitle";
 
 export default function Movies () {
+    const title = useTtile("movies");
     const [data, setData] = useState({
         data: [],
         metadata: {

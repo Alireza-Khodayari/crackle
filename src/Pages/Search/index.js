@@ -3,8 +3,10 @@ import PrimaryLayout from "../../Components/Layouts/PrimaryLayout"
 import { useEffect, useState, useRef } from "react";
 import { api } from "../../utils/api"
 import { useSearchParams, createSearchParams } from "react-router-dom";
+import useTtile from "../../hook/useTitle";
 
 export default function Search () {
+    const title = useTtile("search");
     const input = useRef(null);
     const [searchParams, setSearchParams] = useSearchParams();
     console.log(searchParams.get("term"))

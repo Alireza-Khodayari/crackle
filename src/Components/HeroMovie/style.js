@@ -4,11 +4,16 @@ export const Style = styled.div `
 .hero-movie {
     position: relative;
     width: 100%;
-    height: 500px;
+    .children {
+        position: relative;
+        z-index: 6;
+    }
     .poster {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        height: 580px;
+        background-size: cover;
+        background-position: top center;
         position: absolute;
         left: 0;
         top: 0;

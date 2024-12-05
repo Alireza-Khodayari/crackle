@@ -9,6 +9,7 @@ export default function NewMovie () {
     // const [year, setYear] = useState("");
 
     function onChange (e) {
+        // console.log(e);
         setData({
             ...data,
             [e.target.name] : e.target.value
